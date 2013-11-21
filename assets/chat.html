@@ -1,0 +1,132 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+   <head>
+      <title>Melian</title>
+      <style>
+         body
+         {
+            font-family: arial;
+            font-size: 10pt;
+            margin: 0px;
+            padding: 0px;
+         }
+
+         #main
+         {
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 5px;
+            padding: 0px;
+            width: 710px;
+            text-align: center;
+         }
+
+         #chatFrame
+         {
+            width: 576px;
+            height: 490px;
+            padding: 0px;
+            margin: 0px;
+            border: none;
+            vertical-align: top;
+            font-size: 1pt;
+         }
+
+         #chatURLDescription
+         {
+            font-size: 12pt;
+            font-weight: bold;
+            text-align: center;
+         }
+
+         #chatURL
+         {
+            font-size: 10pt;
+            text-align: center;
+            margin-bottom: 5px;
+         }
+
+         #shareLinkContainer
+         {
+            text-align: center;
+         }
+
+         #shareLink
+         {
+            border: 0px;
+         }
+
+
+         #loadingContainer
+         {
+            height: 10px;
+            line-height: 10px;
+            text-align: center;
+            vertical-align: middle;
+            padding-bottom: 10px;
+         }
+
+         #loading
+         {
+            font-size: 10pt;
+            color: gray;
+         }
+
+         a
+         {
+            color: blue;
+         }
+
+         #advertisement
+         {
+            height: 10px;
+            line-height: 10px;
+            text-align: center;
+            vertical-align: middle;
+            padding-bottom: 10px;
+         }
+      </style>
+   </head>
+   <body>
+      <script type="text/javascript">
+
+         var _gaq = _gaq || [];
+         
+         _gaq.push(['_setAccount', 'UA-12194478-1']);
+         _gaq.push(['_trackPageview']);
+
+         (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+         })();
+        
+         var _qevents = _qevents || [];
+
+         (function() {
+            var elem = document.createElement('script');
+            elem.src = (document.location.protocol == "https:" ? "https://secure" : "http://edge") + ".quantserve.com/quant.js";
+            elem.async = true;
+            elem.type = "text/javascript";
+            var scpt = document.getElementsByTagName('script')[0];
+            scpt.parentNode.insertBefore(elem, scpt);
+         })();
+
+         _qevents.push({
+            qacct:"p-gJ_rGdgsquQYS"
+         });
+
+      </script>
+      <script type="text/javascript">
+         function onChatFrameLoad()
+         {
+            document.getElementById("loading").style.display = "none";
+         }
+      </script>
+      <div id="main">
+         <div id="loadingContainer"><span id="loading">Loading . . .</span></div>
+         <iframe id="chatFrame" onLoad="onChatFrameLoad()" frameBorder="0" scrolling="no" src="http://ptr.neatchat.com:80/?url=http%3A%2F%2Fwww.neatchat.com%2Fgroup%3Fid%3D39e8ae0d11fd4c238fc88846e331d406&type=native&signature=2b5d87dfd17fed2d859d0f8bb73e88ad797de5e1"></iframe>
+      </div>
+   </body>
+</html>

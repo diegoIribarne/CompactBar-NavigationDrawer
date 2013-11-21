@@ -2,9 +2,12 @@
 <resources>
 
     <string-array name="planets_array">
-        <item>hola</item>
-        <item>como</item>
-        <item>estas</item>
+        <item>Musica</item>
+        <item>Facebook</item>
+        <item>Twitter </item>
+        <item>Videos </item>
+        <item>Proximos recitales </item>
+        <item>Chat </item>
     </string-array>
 
 </resources>

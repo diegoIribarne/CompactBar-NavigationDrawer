@@ -117,22 +117,23 @@ public class ActivityMain extends ActionBarActivity {
 
 	/** Swaps fragments in the main content view */
 	private void selectItem(int position) {
-    // Create a new fragment and specify the planet to show based on position
-	    Fragment fragment = new PlanetFragment();
-	    Bundle args = new Bundle();
-	    args.putInt(PlanetFragment.ARG_PLANET_NUMBER, position);
-	    fragment.setArguments(args);
+		// Create a new fragment and specify the planet to show based on
+		// position
+		
+		Fragment fragment = new PlanetFragment();
+		Bundle args = new Bundle();
+		args.putInt(PlanetFragment.SELECTOR_DE_PANTALLAS, position);
+		fragment.setArguments(args);
 
-	    // Insert the fragment by replacing any existing fragment
-	    FragmentManager fragmentManager = getSupportFragmentManager();
-	    fragmentManager.beginTransaction()
-	                   .replace(R.id.content_frame, fragment)
-	                   .commit();
+		// Insert the fragment by replacing any existing fragment
+		FragmentManager fragmentManager = getSupportFragmentManager();
+		fragmentManager.beginTransaction()
+				.replace(R.id.content_frame, fragment).commit();
 
-	    // Highlight the selected item, update the title, and close the drawer
-	    mDrawerList.setItemChecked(position, true);
-	    setTitle(mPlanetTitles[position]);
-	    mDrawerLayout.closeDrawer(mDrawerList);
+		// Highlight the selected item, update the title, and close the drawer
+		mDrawerList.setItemChecked(position, true);
+		setTitle(mPlanetTitles[position]);
+		mDrawerLayout.closeDrawer(mDrawerList);
 	}
 
 	@Override
@@ -161,5 +162,5 @@ public class ActivityMain extends ActionBarActivity {
 		super.onConfigurationChanged(newConfig);
 		mDrawerToggle.onConfigurationChanged(newConfig);
 	}
-	
+
 }
